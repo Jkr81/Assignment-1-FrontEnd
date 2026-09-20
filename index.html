@@ -10,6 +10,15 @@
     <meta name="description" content="An information page about the psychological horror story Crash Loop.">
 
     <title>Crash Loop | Story Archive</title>
+
+    <!-- Custom Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,11 +27,12 @@
     <header>
         <h1>Crash Loop</h1>
 
-        <p>
+        <p class="intro">
             A psychological horror story about
             <strong>addiction, regret, memory, and the consequences of drunk driving.</strong>
         </p>
 
+        <!-- Navigation -->
         <nav>
             <a href="#about">About</a>
             <a href="#characters">Characters</a>
@@ -94,7 +104,7 @@
                 Each room contains a different puzzle and another part of the story.
             </p>
 
-            <ol>
+            <ol class="room-list">
                 <li>
                     <strong>Library</strong> – Sort colored books in the correct order to unlock the door.
                 </li>
@@ -165,7 +175,7 @@
                 Outside, he discovers a newspaper connected to the drunk-driving accident.
             </p>
 
-            <p>
+            <p class="reveal">
                 The newspaper reveals that
                 <strong>Jacobe died in the crash.</strong>
             </p>
@@ -193,20 +203,28 @@
         <section id="gallery">
             <h2>Gallery</h2>
 
-            <h3>Library</h3>
-            <img src="Library.jpg"
-                 alt="The library room from Crash Loop"
-                 width="500">
+            <!-- GRID 2: Image Gallery -->
+            <div class="gallery-grid">
 
-            <h3>Rose Garden</h3>
-            <img src="Garden.jpg"
-                 alt="The rose garden from Crash Loop"
-                 width="500">
+                <figure>
+                    <img src="Library.jpg"
+                         alt="The library room from Crash Loop">
+                    <figcaption>Library</figcaption>
+                </figure>
 
-            <h3>Final Scene</h3>
-            <img src="NewsPaper.jpg"
-                 alt="The final scene from Crash Loop"
-                 width="500">
+                <figure>
+                    <img src="Garden.jpg"
+                         alt="The rose garden from Crash Loop">
+                    <figcaption>Rose Garden</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="NewsPaper.jpg"
+                         alt="The final scene from Crash Loop">
+                    <figcaption>Final Scene</figcaption>
+                </figure>
+
+            </div>
         </section>
 
         <section id="links">
@@ -214,7 +232,9 @@
 
             <p>
                 Learn more about the dangers of drunk driving from
-                <a href="https://www.nhtsa.gov/risky-driving/drunk-driving" target="_blank">
+                <a href="https://www.nhtsa.gov/risky-driving/drunk-driving"
+                   target="_blank"
+                   rel="noopener noreferrer">
                     NHTSA
                 </a>.
             </p>
