@@ -11,7 +11,7 @@
 
     <title>Crash Loop | Story Archive</title>
 
-    <!-- Custom Font -->
+    <!-- Custom Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@400;700&display=swap"
@@ -23,8 +23,10 @@
 
 <body>
 
-    <!-- Main page header -->
+    <!-- HEADER -->
+
     <header>
+
         <h1>Crash Loop</h1>
 
         <p class="intro">
@@ -43,22 +45,36 @@
             <a href="#themes">Themes</a>
             <a href="#gallery">Gallery</a>
         </nav>
+
+        <!-- JavaScript Interaction #1 -->
+        <button id="horrorButton" type="button">
+            Activate Horror Mode
+        </button>
+
     </header>
+
+
+  
+    <!-- MAIN CONTENT -->
+    
 
     <main>
 
+        <!-- ABOUT -->
+
         <section id="about">
+
             <h2>About the Story</h2>
 
             <p>
-                <strong>Crash Loop</strong> follows a young man trapped inside a mysterious house.
-                He must solve puzzles and move through a series of rooms while trying to understand
-                why he is there.
+                <strong>Crash Loop</strong> follows a young man trapped inside
+                a mysterious house. He must solve puzzles and move through a
+                series of rooms while trying to understand why he is there.
             </p>
 
             <p>
-                Throughout the house, the player discovers objects, sounds, and memories that are
-                connected to a drunk-driving accident.
+                Throughout the house, the player discovers objects, sounds,
+                and memories that are connected to a drunk-driving accident.
             </p>
 
             <p>
@@ -66,69 +82,94 @@
                 As he continues through the house, his
                 <em>fragmented memories slowly begin to return.</em>
             </p>
+
         </section>
 
+
+        <!-- CHARACTERS -->
+
         <section id="characters">
+
             <h2>Main Characters</h2>
 
             <h3>The Protagonist</h3>
 
             <p>
-                The protagonist is trapped in a repeating cycle caused by his inability to accept
-                what happened in his past.
+                The protagonist is trapped in a repeating cycle caused by his
+                inability to accept what happened in his past.
             </p>
 
             <p>
-                He remembers celebrating with his best friend, drinking, and driving home,
-                but much of the night remains hidden from him.
+                He remembers celebrating with his best friend, drinking,
+                and driving home, but much of the night remains hidden from him.
             </p>
 
             <h3>Jacobe</h3>
 
             <p>
                 <strong>Jacobe</strong> is the protagonist's best friend.
-                The two friends celebrated together before getting into a car and driving home.
+                The two friends celebrated together before getting into
+                a car and driving home.
             </p>
 
             <p>
-                Throughout the experience, memories of Jacobe help lead the protagonist closer
-                to discovering the truth about the accident.
+                Throughout the experience, memories of Jacobe help lead
+                the protagonist closer to discovering the truth about
+                the accident.
             </p>
+
         </section>
 
+
+        <!-- ROOMS -->
+
         <section id="rooms">
+
             <h2>The Four Rooms</h2>
 
             <p>
                 The player travels through four main areas.
-                Each room contains a different puzzle and another part of the story.
+                Each room contains a different puzzle and another
+                part of the story.
             </p>
 
             <ol class="room-list">
+
                 <li>
-                    <strong>Library</strong> – Sort colored books in the correct order to unlock the door.
+                    <strong>Library</strong> – Sort colored books in the
+                    correct order to unlock the door.
                 </li>
 
                 <li>
-                    <strong>Hallway</strong> – Find four hidden objects and use them to discover a number code.
+                    <strong>Hallway</strong> – Find four hidden objects
+                    and use them to discover a number code.
                 </li>
 
                 <li>
-                    <strong>Rose Garden</strong> – Search through the garden to find a rusty key hidden among the roses.
+                    <strong>Rose Garden</strong> – Search through the garden
+                    to find a rusty key hidden among the roses.
                 </li>
 
                 <li>
-                    <strong>Final Scene</strong> – Escape the house and discover the truth behind the accident.
+                    <strong>Final Scene</strong> – Escape the house and
+                    discover the truth behind the accident.
                 </li>
+
             </ol>
+
         </section>
 
+
+        <!-- CLUES -->
+
         <section id="clues">
+
             <h2>Important Clues</h2>
 
             <p>
                 Environmental clues are hidden throughout the experience.
-                Many of them appear unimportant at first but become meaningful when the truth is revealed.
+                Many of them appear unimportant at first but become
+                meaningful when the truth is revealed.
             </p>
 
             <ul>
@@ -142,52 +183,80 @@
             </ul>
 
             <p>
-                <mark>Every clue reveals another part of the protagonist's past.</mark>
+                <mark>
+                    Every clue reveals another part of the protagonist's past.
+                </mark>
             </p>
+
         </section>
 
+
+        <!-- THE LOOP -->
+
         <section id="loop">
+
             <h2>The Loop</h2>
 
             <p>
-                One of the most important ideas in Crash Loop is the repeating cycle.
+                One of the most important ideas in Crash Loop is
+                the repeating cycle.
             </p>
 
             <p>
                 When the player fails, the experience can begin again.
-                The player may lose their progress, but they still remember what they learned.
+                The player may lose their progress, but they still
+                remember what they learned.
             </p>
 
             <p>
                 The loop represents the protagonist's inability to
                 <em>accept the past and move forward.</em>
             </p>
+
         </section>
 
+
+        <!-- ENDING -->
+
         <section id="ending">
+
             <h2>The Final Reveal</h2>
 
             <p>
-                After completing the rooms, the protagonist finally makes it outside the house.
+                After completing the rooms, the protagonist finally
+                makes it outside the house.
             </p>
 
             <p>
-                Outside, he discovers a newspaper connected to the drunk-driving accident.
+                Outside, he discovers a newspaper connected to
+                the drunk-driving accident.
             </p>
 
-            <p class="reveal">
-                The newspaper reveals that
-                <strong>Jacobe died in the crash.</strong>
+            <!-- JavaScript Interaction #2 -->
+
+            <button id="revealButton" type="button">
+                Reveal the Truth
+            </button>
+
+            <p id="secretEnding" class="reveal" hidden>
+                The truth remains hidden.
             </p>
 
             <p>
-                At that moment, the clues found throughout the house begin to make sense.
-                The experience was not simply about escaping the building.
-                It was about the protagonist confronting a memory he had been unable to accept.
+                At that moment, the clues found throughout the house
+                begin to make sense. The experience was not simply
+                about escaping the building. It was about the
+                protagonist confronting a memory he had been
+                unable to accept.
             </p>
+
         </section>
 
+
+        <!-- THEMES -->
+
         <section id="themes">
+
             <h2>Main Themes</h2>
 
             <ul>
@@ -198,41 +267,71 @@
                 <li>Consequences</li>
                 <li>Acceptance</li>
             </ul>
+
         </section>
 
+
+        <!-- GALLERY -->
+
         <section id="gallery">
+
             <h2>Gallery</h2>
 
-            <!-- GRID 2: Image Gallery -->
+            <p>
+                Hover over the images to explore scenes from Crash Loop.
+            </p>
+
             <div class="gallery-grid">
 
                 <figure>
+
                     <img src="Library.jpg"
                          alt="The library room from Crash Loop">
-                    <figcaption>Library</figcaption>
+
+                    <figcaption>
+                        Library
+                    </figcaption>
+
                 </figure>
 
+
                 <figure>
+
                     <img src="Garden.jpg"
                          alt="The rose garden from Crash Loop">
-                    <figcaption>Rose Garden</figcaption>
+
+                    <figcaption>
+                        Rose Garden
+                    </figcaption>
+
                 </figure>
 
+
                 <figure>
+
                     <img src="NewsPaper.jpg"
                          alt="The final scene from Crash Loop">
-                    <figcaption>Final Scene</figcaption>
+
+                    <figcaption>
+                        Final Scene
+                    </figcaption>
+
                 </figure>
 
             </div>
+
         </section>
 
-        <!-- TWO EXTERNAL HYPERLINKS -->
+
+        <!-- EXTERNAL LINKS -->
+
         <section id="links">
+
             <h2>Learn More</h2>
 
             <p>
                 Learn more about the dangers of drunk driving from
+
                 <a href="https://www.nhtsa.gov/risky-driving/drunk-driving"
                    target="_blank"
                    rel="noopener noreferrer">
@@ -242,21 +341,36 @@
 
             <p>
                 Learn more about preventing impaired driving from
+
                 <a href="https://www.cdc.gov/impaired-driving/"
                    target="_blank"
                    rel="noopener noreferrer">
                     CDC
                 </a>.
             </p>
+
         </section>
 
     </main>
 
+
+  
+    <!-- FOOTER -->
+  
+
     <footer>
+
         <p>
-            <small>Crash Loop — By Josh Rocha.</small>
+            <small>
+                Crash Loop — By Josh Rocha.
+            </small>
         </p>
+
     </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 
